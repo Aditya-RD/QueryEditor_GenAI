@@ -5,8 +5,8 @@ from langchain.prompts.chat import (
     SystemMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
-from langchain.chat_models import ChatOpenAI
-from langchain import LLMChain
+from langchain_community.chat_models import ChatOpenAI
+from langchain.chains import LLMChain
 from flask import Flask, request, jsonify
 from datetime import datetime
 from flask_cors import CORS  # Import flask_cors
